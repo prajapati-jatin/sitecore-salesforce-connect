@@ -12,10 +12,10 @@ namespace Sitecore.Salesforce.Client
   using System.Collections.Generic;
   using System.Linq;
 
-  using Sitecore.Diagnostics;
   using Sitecore.Salesforce.Client.Data;
+    using Sitecore.Diagnostics;
 
-  public interface ISalesforceClient
+    public interface ISalesforceClient
   {
     T HttpGet<T>(string resource);
 

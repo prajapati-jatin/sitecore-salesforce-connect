@@ -3,8 +3,9 @@
   using System;
   using System.Net.Http;
   using System.Net.Http.Headers;
+    using Sitecore.Diagnostics;
 
-  using Sitecore.Diagnostics;
+
 
   public abstract class ClientBase : IDisposable
   {
@@ -68,6 +69,10 @@
 
     protected void EnsureHeaders()
     {
+
+            System.Net.ServicePointManager.SecurityProtocol = System.Net.SecurityProtocolType.Tls12 |
+                     System.Net.SecurityProtocolType.Tls11 | System.Net.SecurityProtocolType.Tls;
+
       var headers = this.HttpClient.DefaultRequestHeaders;
 
       headers.UserAgent.Clear();

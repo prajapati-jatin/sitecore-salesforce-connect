@@ -18,13 +18,13 @@ namespace Sitecore.Salesforce.Client
 
   using Newtonsoft.Json;
 
-  using Sitecore.Diagnostics;
   using Sitecore.Integration.Common;
   using Sitecore.Salesforce.Client.Data.Errors;
   using Sitecore.Salesforce.Client.Exceptions;
   using Sitecore.Salesforce.Client.Security;
+    using Sitecore.Diagnostics;
 
-  public class SalesforceClient : ClientBase, ISalesforceClient
+    public class SalesforceClient : ClientBase, ISalesforceClient
   {
     private IRetryer retryer;
 
