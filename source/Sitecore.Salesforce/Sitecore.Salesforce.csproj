@@ -52,6 +52,9 @@
     <Reference Include="Sitecore.Analytics.Model, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Sitecore.Analytics.Model.NoReferences.8.2.161115\lib\NET452\Sitecore.Analytics.Model.dll</HintPath>
     </Reference>
+    <Reference Include="Sitecore.Forms.Core, Version=8.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Forms.Core.NoReferences.8.2.161129\lib\NET452\Sitecore.Forms.Core.dll</HintPath>
+    </Reference>
     <Reference Include="Sitecore.Integration.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Sitecore.Integration.Common.1.0.45\lib\net45\Sitecore.Integration.Common.dll</HintPath>
@@ -59,6 +62,12 @@
     </Reference>
     <Reference Include="Sitecore.Kernel, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Sitecore.Kernel.NoReferences.8.2.161115\lib\NET452\Sitecore.Kernel.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.WFFM.Abstractions, Version=8.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.WFFM.Abstractions.NoReferences.8.2.161129\lib\NET452\Sitecore.WFFM.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.WFFM.Actions, Version=8.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.WFFM.Actions.NoReferences.8.2.161129\lib\NET452\Sitecore.WFFM.Actions.dll</HintPath>
     </Reference>
     <Reference Include="System.Data" />
     <Reference Include="System.EnterpriseServices" />
@@ -141,6 +150,7 @@
     <Compile Include="Texts.cs" />
     <Compile Include="Extensions\StringExtensions.cs" />
     <Compile Include="Utils\SoqlUtil.cs" />
+    <Compile Include="Wffm\SaveActions\CreateSalesforceContact.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App_Config\Include\Sitecore.Salesforce.config">
